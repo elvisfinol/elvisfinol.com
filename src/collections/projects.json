@@ -7,13 +7,13 @@
 	},
 	{
 		"name": "Mi Estación de Trabajo Newsletter",
-		"description": "Newsletter con contenido sobre Productividad, Tecnología, Desarrollo Profesional y Trabajo Remoto.",
+		"description": "Newsletter with content about Productivity, Technology, Professional Development, and Remote Work.",
 		"image": "/assets/images/projects/medt-newsletter.jpeg",
 		"url": "https://elvisfinol.beehiiv.com/"
 	},
 	{
 		"name": "Mi Estación de Trabajo Youtube",
-		"description": "Canal de YouTube con sesiones de trabajo y estudio para maximizar tu creatividad y acompañarte mientras te enfocas, ya sea trabajando, estudiando, o leyendo.",
+		"description": "YouTube channel where you can find study sessions to boost your creativity and keep you company while you work, study, or just chill with a good book.",
 		"image": "/assets/images/projects/medt-youtube.jpeg",
 		"url": "https://www.youtube.com/@miestaciondetrabajo"
 	}
