@@ -1,18 +1,18 @@
 [
 	{
-		"name": "Email.ML",
-		"description": "Minimalist temporary Email.",
+		"name": "Vive Simple",
+		"description": "Video Editor",
 		"image": "/assets/images/projects/email.ml.png",
-		"url": "https://email.ml"
+		"url": "https://www.youtube.com/c/ViveSimple"
 	},
 	{
-		"name": "DNS.Surf",
+		"name": "Mi Estación de Trabajo Newsletter",
 		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
 		"image": "/assets/images/projects/dns.surf.png",
 		"url": "https://dns.surf"
 	},
 	{
-		"name": "HTML.ZONE",
+		"name": "Mi Estación de Trabajo Youtube",
 		"description": "Web Toolbox.",
 		"image": "/assets/images/projects/html.zone.png",
 		"url": "https://html.zone"
