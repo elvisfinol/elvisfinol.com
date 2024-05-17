@@ -2,19 +2,19 @@
 	{
 		"name": "Vive Simple",
 		"description": "Video Editor",
-		"image": "/assets/images/projects/email.ml.png",
+		"image": "/assets/images/projects/vivesimple-youtube.jpeg",
 		"url": "https://www.youtube.com/c/ViveSimple"
 	},
 	{
 		"name": "Mi Estación de Trabajo Newsletter",
 		"description": "Querying DNS Resolution Results in Different Regions Worldwide.",
-		"image": "/assets/images/projects/dns.surf.png",
+		"image": "/assets/images/projects/medt-newsletter.jpeg",
 		"url": "https://dns.surf"
 	},
 	{
 		"name": "Mi Estación de Trabajo Youtube",
-		"description": "Web Toolbox.",
-		"image": "/assets/images/projects/html.zone.png",
-		"url": "https://html.zone"
+		"description": "Canal de YouTube con sesiones de trabajo y estudio para maximizar tu creatividad y acompañarte mientras te enfocas, ya sea trabajando, estudiando, o leyendo.",
+		"image": "/assets/images/projects/medt-youtube.jpeg",
+		"url": "https://www.youtube.com/@miestaciondetrabajo"
 	}
 ]
