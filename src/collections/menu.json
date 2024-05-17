@@ -8,10 +8,6 @@
 		"url": "/about"
 	},
 	{
-		"name": "Posts",
-		"url": "/posts"
-	},
-	{
 		"name": "Projects",
 		"url": "/projects"
 	}
