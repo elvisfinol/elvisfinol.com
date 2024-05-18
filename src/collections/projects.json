@@ -6,6 +6,12 @@
 		"url": "https://www.youtube.com/c/ViveSimple"
 	},
 	{
+		"name": "Vive Simple",
+		"description": "Web Developer",
+		"image": "/assets/images/projects/vivesimple-website.jpeg",
+		"url": "https://vivesimple.me/"
+	},
+	{
 		"name": "Mi Estación de Trabajo Newsletter",
 		"description": "Newsletter with content about Productivity, Technology, Professional Development, and Remote Work.",
 		"image": "/assets/images/projects/medt-newsletter.jpeg",

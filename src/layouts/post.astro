@@ -1,6 +1,9 @@
 ---
 import Layout from "./main.astro";
 const { frontmatter } = Astro.props;
+
+// Supports weights 100-900
+import '@fontsource-variable/onest';
 ---
 
 <Layout title={frontmatter.title}>
