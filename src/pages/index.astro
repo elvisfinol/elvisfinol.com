@@ -4,6 +4,7 @@ import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Writings from "../components/home/writings.astro";
 import Layout from "../layouts/main.astro";
+import About from "./about.astro";
 ---
 
 <Layout title="Elvis Finol Website">
@@ -22,11 +23,10 @@ import Layout from "../layouts/main.astro";
           <br
             class="hidden lg:block"
           /> <br class="hidden lg:block" /><span
-            class="hidden lg:block"
-            > </span
-          >
+            class="hidden lg:block"> 
+          </span>
         </p>
-        <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
+        <!-- <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           I can help you out with:
         </p>
         <ul
@@ -37,7 +37,7 @@ import Layout from "../layouts/main.astro";
           <li>Video Editing</li>
           <li>Photo Editing</li>
           <li>and more...</li>
-        </ul>
+        </ul> -->
         <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol" />
         <Button text="Follow me on LinkedIn" link="https://www.linkedin.com/in/elvisfinol/" />
       </div>
@@ -75,10 +75,13 @@ import Layout from "../layouts/main.astro";
     </div>
   </div>
 
-  <Separator text="Check out my projects" />
+  <Separator text="About" />
+  <About />
+
+  <Separator text="Projects" />
+
   <Projects />
-<!--   <Separator text="Some of my writing" />
+
+  <!-- <Separator text="Some of my writing" />
   <Writings /> -->
 </Layout>
-
-
