@@ -1,13 +1,13 @@
 [
 	{
-		"name": "Vive Simple",
-		"description": "Video Editor",
+		"name": "Vive Simple - Video Editor",
+		"description": "I'm all about making awesome videos! I mix footage, tweak audio, and smooth out transitions. With an eye for detail, I turn your ideas into reality with top-notch video recording and killer thumbnail designs, so your content really pops online.",
 		"image": "/assets/images/projects/vivesimple-youtube.jpeg",
 		"url": "https://www.youtube.com/c/ViveSimple"
 	},
 	{
-		"name": "Vive Simple",
-		"description": "Web Developer",
+		"name": "Vive Simple - Web Developer",
+		"description": "I've designed and built the Vive Simple website, and I've completed several projects that you can check out on my GitHub page.",
 		"image": "/assets/images/projects/vivesimple-website.jpeg",
 		"url": "https://vivesimple.me/"
 	},
