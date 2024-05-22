@@ -4,6 +4,7 @@ import Projects from "../components/home/projects.astro";
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
 import About from "./about.astro";
+import Writings from "../components/home/writings.astro";
 
 ---
 
@@ -11,28 +12,30 @@ import About from "./about.astro";
 
   <div class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0">
 
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col">
 
       <div class="relative w-full md:w-fit">
 
-        <h1 class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white">
+        <h1 class="mb-5 text-5xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white">
           Hello, <p class= "text-orange-500	text-8xl ">I'm Elvis.</p>
         </h1>
-        <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
+        <p class="mb-4 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl dark:text-white">
 
-          IT tech professional | Video & Image Editor | 📍Based in Spain
+          IT tech professional | Video & Image Editor</p>
 
-          <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect!</h2>
+          <p class="mb-4 text-2xl font-medium text-gray-900 md:text-3xl dark:text-white">📍Based in Spain </p>
+
+          <!-- <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">Let's Connect!</h2> -->
           
           <!-- <p class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg">
             Stay up to date with my work by following me on</a> -->
 
-          <br class="hidden lg:block"/>
+          <!-- <br class="hidden lg:block"/> -->
 
-          <span
+          <!-- <span
             class="hidden lg:block"> 
-          </span>
-        </p>
+          </span> -->
+        
 
         <!-- <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
           I can help you out with:
@@ -45,9 +48,8 @@ import About from "./about.astro";
           <li>and more...</li>
         </ul> -->
 
-        <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol" />
-        <Button text="Follow me on LinkedIn" link="https://www.linkedin.com/in/elvisfinol/" />
-        
+        <!-- <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol" />
+        <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />         -->
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
@@ -84,14 +86,16 @@ import About from "./about.astro";
 
   <a id="about"></a>
   <Separator text="About"/>
-
-
   <About />
-  
+
+
+
+
+  <!-- <Separator text="Blog" />
+  <Writings /> -->
+
   <a id="projects"></a>
   <Separator text="Projects" />
   <Projects />
-
-  <!-- <Separator text="Some of my writing" />
-  <Writings /> -->
+  
 </Layout>

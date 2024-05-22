@@ -16,7 +16,7 @@ import '@fontsource-variable/onest';
     <title>{title}</title>
 
     <!-- Used to add dark mode right away, adding here prevents any flicker -->
-    <script>
+    <!-- <script>
       if (typeof Storage !== 'undefined') {
         if (
           localStorage.getItem('dark_mode') &&
@@ -25,7 +25,7 @@ import '@fontsource-variable/onest';
           document.documentElement.classList.add('dark')
         }
       }
-    </script>
+    </script> -->
 
     <style>
       .prose img {
@@ -34,6 +34,7 @@ import '@fontsource-variable/onest';
 
       html {
         font-family: 'Onest Variable', sans-serif;
+        /* font-family: 'Manrope Variable', sans-serif; */
         scroll-behavior: smooth;
       }
 
@@ -44,7 +45,7 @@ import '@fontsource-variable/onest';
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
 
-  <body class="antialiased bg-white dark:bg-gray-800">
+  <body class="antialiased bg-white dark:bg-neutral-900">
     <SquareLines />
     <Header />
     <slot />
@@ -52,5 +53,4 @@ import '@fontsource-variable/onest';
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
   </body>
   <Footer />
-
 </html>

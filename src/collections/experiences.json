@@ -4,6 +4,7 @@
 		"role": "Sr. Technical Support Engineer, Focused Services.",
 		"company": "Palo Alto Networks",
 		"description": "",
+		"skills": "Skills",
 		"logo": "/assets/images/experiences/PaloAltoNetworks.ico"
 	},
 	{
@@ -11,6 +12,7 @@
 		"role": "System Support Engineer",
 		"company": "Teradata",
 		"description": "",
+		"skills": "",
 		"logo": "/assets/images/experiences/Teradata.ico"
 	},
 	{
@@ -18,6 +20,7 @@
 		"role": "Customer Support Executive - Technical",
 		"company": "Thomson Reuters",
 		"description": "",
+		"skills": "",
 		"logo": "/assets/images/experiences/ThomsonReuters.ico"
 	}
 ]

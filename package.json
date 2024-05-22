@@ -22,7 +22,10 @@
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
+		"@fontsource-variable/manrope": "^5.0.20",
 		"@fontsource-variable/onest": "^5.0.4"
 	},
-	"plugins": ["prettier-plugin-tailwindcss"]
+	"plugins": [
+		"prettier-plugin-tailwindcss"
+	]
 }
