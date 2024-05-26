@@ -9,15 +9,20 @@ import About from "./about.astro";
 
 <Layout title="Elvis Finol Website">
 
-      <div class="relative w-full flex flex-wrap mb-20 mt-32 space-x-2 justify-center lg:text-8xl md:text-7xl sm:text-6xl text-5xl">
-          <h1 class="font-bold leading-8 dark:text-white">
-            Hello, <h1 class="font-bold leading-8 text-orange-500 dark:text-orange-500">I'm Elvis.</h1>
-          </h1>
+  <section class="grid gap-8">
+
+      <div class="flex mb-5 mt-0 space-x-2 justify-center">
+          <img class="max-w-20 rounded-lg" src="/public/assets/images/photo.png" alt=""> 
       </div>
 
-      <div class="flex flex-col justify-center items-center">
-            <p class="mb-2 font-bold leading-8 tracking-tight text-gray-900 lg:text-5xl md:text-5xl sm:text-4xl text-3xl dark:text-white"> IT tech professional</p>
-            <p class="mb-20 font-medium text-gray-900 lg:text-4xl md:text-3xl sm:text-2xl text-1xl dark:text-white">📍Madrid, Spain </p>  
+      <div class="flex flex-wrap justify-center gap-2 text-5xl font-bold mb-5 md:text-7xl lg:text-8xl">
+          <h1 class="font-bold leading-12">Hello,</h1>
+          <h1 class="font-bold leading-12 text-orange-500">I'm Elvis.</h1>
+      </div>
+
+      <div class="text-3xl font-bold mb-2 text-center">
+            <p class="mb-2 font-medium leading-8 tracking-tight text-gray-900"> IT tech professional</p>
+            <p class="mb-20 font-light text-gray-900">📍Madrid, Spain </p>  
       </div>
 
 
@@ -27,7 +32,8 @@ import About from "./about.astro";
             <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />
 
         </div>
- 
+
+      </section>
 
         <a id="about"></a>
         <Separator text="About"/>

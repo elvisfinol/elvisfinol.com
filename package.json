@@ -25,7 +25,9 @@
 	},
 	"dependencies": {
 		"@fontsource-variable/manrope": "^5.0.20",
-		"@fontsource-variable/onest": "^5.0.4"
+		"@fontsource-variable/onest": "^5.0.4",
+		"@fontsource/poppins": "^5.0.14",
+		"@fontsource/raleway": "^5.0.19"
 	},
 	"plugins": [
 		"prettier-plugin-tailwindcss"
