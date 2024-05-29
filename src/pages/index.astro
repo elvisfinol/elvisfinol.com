@@ -9,31 +9,27 @@ import About from "./about.astro";
 
 <Layout title="Elvis Finol Website">
 
-  <section class="grid gap-8">
+  <section class="relative z-20 max-w-3xl mx-auto my-12 px-7 lg:px-0 text-center">
 
-      <div class="flex mb-5 mt-0 space-x-2 justify-center">
-          <img class="max-w-20 rounded-lg" src="/public/assets/images/photo.png" alt=""> 
+      <div class="text-5xl font-bold mb-5 mt-32 md:text-7xl lg:text-8xl">
+          <h1 class="font-bold">Hello, <strong class="text-orange-400">I'm Elvis.</strong></h1>
       </div>
 
-      <div class="flex flex-wrap justify-center gap-2 text-5xl font-bold mb-5 md:text-7xl lg:text-8xl">
-          <h1 class="font-bold leading-12">Hello,</h1>
-          <h1 class="font-bold leading-12 text-orange-500">I'm Elvis.</h1>
+      <div class="text-3xl font-bold mb-2">
+            <h2 class="mb-2 font-medium leading-8 tracking-tight text-gray-900"> IT tech professional</h2>
+            <h2 class="mb-2 font-light text-gray-900">📍Madrid, Spain </h2>  
+            <img class="inline-flex max-w-28 rounded-md" src="/assets/images/photo.png" alt="">           
       </div>
-
-      <div class="text-3xl font-bold mb-2 text-center">
-            <p class="mb-2 font-medium leading-8 tracking-tight text-gray-900"> IT tech professional</p>
-            <p class="mb-20 font-light text-gray-900">📍Madrid, Spain </p>  
-      </div>
-
-
-        <div class="flex flex-row justify-center space-x-0">  
-          
-            <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol"/>
-            <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />
-
-        </div>
 
       </section>
+
+      <div class="flex flex-row justify-center space-x-0">  
+          
+        <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol"/>
+        <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />
+
+    </div>
+
 
         <a id="about"></a>
         <Separator text="About"/>
