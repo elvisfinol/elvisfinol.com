@@ -9,24 +9,27 @@ import About from "./about.astro";
 
 <Layout title="Elvis Finol Website">
 
-<section class="relative z-20 max-w-3xl mx-auto my-12 px-7 lg:px-0 text-center">
+    
 
-    <img class="inline-flex max-w-20 rounded-3xl" src="/assets/images/photo.png" alt="">           
+
+<section class="relative z-20 mt-32 max-w-3xl mx-auto my-12 px-7 lg:px-0 text-center">
+    
+
+    <img class="inline-flex w-24 rounded" src="/assets/images/photo.png" alt="">
+
 
     <div class="text-5xl font-bold mb-5 mt-5 md:text-7xl lg:text-8xl">
         <h1 class="font-bold hover:scale-125 transition">Hello, <span class="text-orange-400">I'm Elvis.</span></h1>
     </div>
 
     <div class="flex flex-row text-2xl mb-2 justify-center items-center space-x-4 text-center">
-        <h2 class="mb-2 font-light leading-8 tracking-tight text-gray-800"> IT tech professional</h2>
-        <h2>|</h2>
-        <h2 class="mb-2 font-light text-gray-900">Madrid, Spain</h2>  
+        <h2 class="mb-2 font-light leading-8 tracking-tight text-gray-800">Venezuelan-born IT tech professional based in Madrid.📍 </h2>
     </div>
 
 </section>
 
 
-    <div class="flex flex-row justify-center space-x-0">  
+    <div class="flex flex-row justify-center space-x-2">  
         <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol"/>
         <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />
     </div>
@@ -39,6 +42,7 @@ import About from "./about.astro";
         <a id="projects"></a>
         <Separator text="Projects" />
         <Projects />
+
 
 
 
