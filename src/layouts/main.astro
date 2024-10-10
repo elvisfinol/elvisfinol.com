@@ -1,7 +1,6 @@
 ---
-import Footer from "../components/footer.astro";
 import Header from "../components/header.astro";
-import SquareLines from "../components/square-lines.astro";
+import Footer from "../components/footer.astro"
 const { title } = Astro.props;
 
 // Supports weights 100-900
@@ -15,18 +14,6 @@ import '@fontsource-variable/onest';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
 
-    <!-- Used to add dark mode right away, adding here prevents any flicker -->
-    <!-- <script>
-      if (typeof Storage !== 'undefined') {
-        if (
-          localStorage.getItem('dark_mode') &&
-          localStorage.getItem('dark_mode') == 'true'
-        ) {
-          document.documentElement.classList.add('dark')
-        }
-      }
-    </script> -->
-
     <style>
       .prose img {
         border-radius: 20px;
@@ -34,8 +21,8 @@ import '@fontsource-variable/onest';
 
       html {
         font-family: 'Onest Variable', sans-serif;
-        /* font-family: 'Manrope Variable', sans-serif; */
         scroll-behavior: smooth;
+        font-weight: 200;
       }
 
   
@@ -45,13 +32,16 @@ import '@fontsource-variable/onest';
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
 
-  <!-- <body class="antialiased bg-gradient-to-tl from-indigo-300"> -->
   <body class="antialiased bg-slate-100">
-    <SquareLines />
+
     <Header />
+
     <slot />
+
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
+
   </body>
+  
   <Footer />
 </html>

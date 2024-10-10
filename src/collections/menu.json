@@ -4,14 +4,6 @@
 		"url": "/"
 	},
 	{
-		"name": "About", 
-		"url": "#about"
-	},
-	{
-		"name": "Projects",
-		"url": "#projects"
-	},
-	{
 		"name": "Newsletter↗",
 		"url": "https://elvisfinol.beehiiv.com/"
 	}

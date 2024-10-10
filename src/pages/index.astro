@@ -1,49 +1,35 @@
 ---
 import Button from "../components/button.astro";
-import Projects from "../components/home/projects.astro";
-import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
-import About from "./about.astro";
-// import Writings from "../components/home/writings.astro";
+import About from "../pages/about.astro"
+import Footer from "../components/footer.astro"
+
 ---
 
 <Layout title="Elvis Finol Website">
 
-    
+        <section class="grid grid-cols-1 grid-rows-2 gap-10">
 
+            <div class="row-span-2 flex flex-col items-center">
+                <img class="w-24 rounded" src="/assets/images/photo.png" alt="">
 
-<section class="relative z-20 mt-32 max-w-3xl mx-auto my-12 px-7 lg:px-0 text-center">
-    
+                <div class="text-5xl font-bold mb-5 mt-5 md:text-4xl lg:text-6xl">
+                    <h1 class="font-bold hover:scale-125 transition">Hello, <span class="text-orange-400">I'm Elvis.</span></h1>
+                </div>
+            
+                <div class="relative z-20 max-w-3xl mx-auto my-12 px-6 sm:px-8 lg:px-0 text-center">
+                    <h3 class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">Senior System Engineer with diverse experience in <span class="font-bold"> problem-solving.</span> Skilled in independent and team-based work across project lifecycles.</h3>
+                </div>
+            </div>
+        </section>
 
-    <img class="inline-flex w-24 rounded" src="/assets/images/photo.png" alt="">
+        <div class="flex flex-row justify-center space-x-6">  
+            <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol"/>
+            <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />
+        </div>
 
-
-    <div class="text-5xl font-bold mb-5 mt-5 md:text-7xl lg:text-8xl">
-        <h1 class="font-bold hover:scale-125 transition">Hello, <span class="text-orange-400">I'm Elvis.</span></h1>
-    </div>
-
-    <div class="flex flex-row text-2xl mb-2 justify-center items-center space-x-4 text-center">
-        <h2 class="mb-2 font-light leading-8 tracking-tight text-gray-800">Venezuelan-born IT tech professional based in Madrid.📍 </h2>
-    </div>
-
-</section>
-
-
-    <div class="flex flex-row justify-center space-x-2">  
-        <Button text="Follow me on 𝕏" link="https://twitter.com/elvisfinol"/>
-        <Button text="Follow me on Instagram" link="https://www.instagram.com/elvisfinol.me/" />
-    </div>
-
-
-        <a id="about"></a>
-        <Separator text="About"/>
         <About />
-
-        <a id="projects"></a>
-        <Separator text="Projects" />
-        <Projects />
-
-
-
-
+        
 </Layout>
+
+
