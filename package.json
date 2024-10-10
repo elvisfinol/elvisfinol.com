@@ -24,6 +24,7 @@
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
+		"@astrojs/react": "^3.6.2",
 		"@fontsource-variable/manrope": "^5.0.20",
 		"@fontsource-variable/onest": "^5.0.4",
 		"@fontsource/poppins": "^5.0.14",
