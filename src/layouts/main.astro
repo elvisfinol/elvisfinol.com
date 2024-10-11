@@ -1,7 +1,5 @@
 ---
-// import Header from "../components/header.astro";
-// import Footer from "../components/footer.astro"
-const { title } = Astro.props;
+// const { title } = Astro.props;
 
 // Supports weights 100-900
 import '@fontsource-variable/onest';
@@ -12,7 +10,7 @@ import '@fontsource-variable/onest';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title}</title>
+    <!-- <title>{title}</title> -->
 
     <style>
       .prose img {
@@ -34,7 +32,6 @@ import '@fontsource-variable/onest';
 
   <body class="antialiased bg-slate-100 my-20">
 
-    <!-- <Header /> -->
 
     <slot />
 
@@ -43,5 +40,4 @@ import '@fontsource-variable/onest';
 
   </body>
   
-  <!-- <Footer /> -->
 </html>
