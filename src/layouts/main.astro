@@ -1,6 +1,6 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro"
+// import Header from "../components/header.astro";
+// import Footer from "../components/footer.astro"
 const { title } = Astro.props;
 
 // Supports weights 100-900
@@ -32,9 +32,9 @@ import '@fontsource-variable/onest';
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
 
-  <body class="antialiased bg-slate-100">
+  <body class="antialiased bg-slate-100 my-20">
 
-    <Header />
+    <!-- <Header /> -->
 
     <slot />
 
@@ -43,5 +43,5 @@ import '@fontsource-variable/onest';
 
   </body>
   
-  <Footer />
+  <!-- <Footer /> -->
 </html>
