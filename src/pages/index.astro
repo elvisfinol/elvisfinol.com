@@ -3,8 +3,10 @@ import Layout from "../layouts/main.astro";
 ---
 
 <Layout title="Elvis Finol - Website">
-  <!-- Sección de presentación -->
-  <section class="px-8 sm:px-12 lg:px-20 py-12 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-700 shadow-sm rounded-3xl border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 space-y-8 sm:space-y-10 lg:space-y-12 text-left tracking-tight transition-all duration-300 ease-in-out">    
+
+
+<!-- Sección de presentación -->
+<section class="px-8 sm:px-12 lg:px-20 py-12 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50 shadow-sm rounded-3xl border border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 space-y-8 sm:space-y-10 lg:space-y-12 text-left tracking-tight transition-all duration-300 ease-in-out">    
     <div class="flex flex-col items-start">
       <!-- Título y descripción -->
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-4 lg:mt-0 transform duration-300">
@@ -66,48 +68,65 @@ import Layout from "../layouts/main.astro";
 
   <!-- Botones de redes sociales -->
 
-  <section class="max-w-4xl mx-auto px-8 lg:px-20 py-0 space-y-8 text-left text-gray-800 tracking-tight transition duration-300 ease-in-out">
+  <section class="max-w-4xl mx-auto px-8 lg:px-20 py-12 space-y-8 text-left text-gray-800 tracking-tight transition duration-300 ease-in-out">
 
-    <h1 class="text-4xl font-semibold">Acerca de mí</h1>
-
-    <p class="text-sm sm:text-base lg:text-lg">
-      Hey there! Thanks for stopping by!
+    <h1 class="text-4xl font-bold">About Me</h1>
+    
+    <p class="text-base lg:text-lg">
+      I’m Elvis, a passionate IT professional originally from Maracaibo, Venezuela 🇻🇪, now based in Madrid, Spain. My journey in tech has been driven by a relentless curiosity and a knack for solving complex problems.
     </p>
-
-    <p class="text-sm sm:text-base lg:text-lg">
-      I'm Elvis, hailing from Maracaibo, Venezuela 🇻🇪, the second most important city in the country.
+  
+    <p class="text-base lg:text-lg">
+      With a background in <span class="text-orange-500 font-bold">Electronic Engineering</span> focused on Automation and Process Control, I've pivoted into IT, cloud infrastructure, and DevOps. My expertise isn't confined to theoretical knowledge—I thrive on implementing practical solutions that drive impact.
     </p>
-
-    <p class="text-sm sm:text-base lg:text-lg">
-      With a Bachelor's degree in 
-      <span class="text-orange-500 font-bold">Electronic Engineering</span>, specializing in Automation and Process Control, I've delved into the world of designing, developing, and implementing systems for industrial automation. 
-      <span class="text-orange-500 font-bold">
-        However, all my experience has been deeply rooted in the IT world; I've never set foot in a factory!
-      </span>
-    </p>
-
-    <p class="text-sm sm:text-base lg:text-lg">
-      After stints in Buenos Aires, Argentina, and now settling in Madrid for the past three years, I've been on a quest for better opportunities, leading me to where I am today.
-    </p>
-
-    <p class="text-sm sm:text-base lg:text-lg">
-      Currently, I'm rocking a tech role at 
+  
+    <p class="text-base lg:text-lg">
+      Currently, I’m part of the team at 
       <strong class="text-orange-500 hover:underline decoration-gray-400 font-bold">
         <a href="http://paloaltonetworks.com" target="_blank">Palo Alto Networks↗</a>
       </strong>, where I work closely with customers, ensuring their cloud security! 😶‍🌫️
+
+
+    </p>
+  
+    <p class="text-base lg:text-lg">
+      What sets me apart is my ability to bridge the gap between engineering and IT operations. I’m a proactive problem solver who doesn’t shy away from challenges—whether it’s streamlining cloud infrastructure, automating processes, or enhancing security frameworks.
+    </p>
+  
+    <p class="text-base lg:text-lg">
+      I’m not just about the tech—I bring creativity, adaptability, and a results-driven mindset to every project. My experience across different countries has sharpened my ability to adapt and excel in diverse environments.
     </p>
 
-    <p class="text-sm font-bold text-orange-500 mt-8 sm:text-base lg:text-lg">
-      Got a project in mind?
-    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-4">
+        <h3 class="text-xl font-semibold text-orange-500 mb-4">Technologies</h3>
+        <ul class="space-y-2">
+            <li>• GCP & AWS and Azure</l>
+            <li>• Terraform & CloudFormation</li>
+            <li>• Kubernetes & Docker</li>
+            <li>• CI/CD Pipelines</li>
+            <li>• Cloud-Native Application Protection Platform (CNAPP)</li>
+            <li>• IAM & Secrets Management</li>
+            <li>• WAF & OWASP</li>
+            <li>• Compliance (CIS, ISO)</li>
+            <li>• Python & Bash</li>
+            <li>• Git</li>
+            <li>• YAML & JSON</li>
+            <li>• Postman & APIs</li>
+        </ul>
+      </div>
 
-    <p class="text-sm sm:text-base lg:text-lg">
-      Feel free to hit me up—I'm here to bring my technical skills to the table!
-    </p>
 
-    <p class="text-sm sm:text-base lg:text-lg">
-      You can send me an 
-      <a href="mailto:e.finol7@gmail.com" class="text-orange-500 underline">email</a> and I'll be sure to get back to you.
-    </p>
+      <p class="text-lg font-bold text-orange-500 mt-10">
+        Ready to take your project to the next level?
+      </p>
+    
+      <p class="text-base lg:text-lg">
+        Let’s make it happen. If you’re looking for a technical expert with a creative edge, I’m here to help. Reach out via 
+        <a href="mailto:e.finol7@gmail.com" class="text-orange-500 underline">email</a>—let’s build something great together!
+      </p>
+  
   </section>
+
+
+  
 </Layout>

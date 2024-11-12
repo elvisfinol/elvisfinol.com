@@ -3,6 +3,8 @@
 
 // Supports weights 100-900
 import '@fontsource-variable/onest';
+import React from "react";
+import { RevealBento } from "../components/Bento.jsx";
 ---
 
 <!doctype html>
@@ -30,7 +32,7 @@ import '@fontsource-variable/onest';
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
 
-  <body class="antialiased bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 min-h-screen flex flex-col items-center justify-start py-14 gap-10 mx-4">
+  <body class="antialiased bg-gradient-to-b from-gray-100 to-gray-200 text-gray-800 flex items-center flex-col py-14 gap-4 px-4">
 
     <slot />
 
