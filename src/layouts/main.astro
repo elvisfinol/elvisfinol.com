@@ -4,6 +4,7 @@
 // Supports weights 100-900
 import '@fontsource-variable/onest';
 
+
 ---
 
 <!doctype html>
@@ -31,12 +32,11 @@ import '@fontsource-variable/onest';
     <Fragment set:html={import.meta.env.HEADER_INJECT} />
   </head>
 
-  <body class="antialiased bg-gradient-to-tr from-slate-100 to-gray-200 flex items-center flex-col py-10 px-4">
-
+  <body class="antialiased bg-gradient-to-tr from-slate-100 to-gray-200 flex items-center justify-center min-h-screen py-20 px-5">
     <slot />
-
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
+
 
   </body>
   
