@@ -4,21 +4,13 @@ import Layout from "../layouts/main.astro";
 
 <Layout title="Elvis Finol - Website">
 
-    <section class="px-8 sm:px-12 lg:px-20 py-12 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-200 text-gray-800 space-y-8 sm:space-y-10 lg:space-y-12 text-left tracking-tight transition-all duration-300 ease-in-out">
-        <div class="flex flex-row justify-between text-left space-y-6">
-            <!-- Responsive Heading -->
+    <section class="py-12 px-10 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-200 text-gray-800 text-left tracking-tight transition-all duration-300 ease-in-out space-y-5">
+        <div class="flex flex-row justify-between text-left">
             <h1 class="text-7xl font-bold transform duration-300">
-                <span>Hello,</span>
+                <span>Hello,<span>
                 <span class="block text-orange-400">I'm Elvis!</span>
             </h1>
-            <!-- Responsive Image -->
-            <!-- <img 
-                class="w-auto h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 rounded-md" 
-                src="/public/assets/images/photo.png" 
-                alt="Profile Image">< -->
         </div>
-
-
 
         <div class="max-w-3xl">
             <h3 class="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-700 dark:text-neutral-400">
@@ -53,39 +45,43 @@ import Layout from "../layouts/main.astro";
         </div>
     </section>
     
-    <section class="max-w-4xl mx-auto px-8 lg:px-20 py-12 space-y-8 text-left text-gray-800 tracking-tight transition duration-300 ease-in-out">
-        <h1 class="text-4xl font-bold">About Me</h1>
-        <p class="text-base lg:text-lg">I’m Elvis, a passionate IT professional originally from Maracaibo, Venezuela 🇻🇪, now based in Madrid, Spain.</p>
-        <p class="text-base lg:text-lg">With a background in <span class="text-orange-500 font-bold">Electronic Engineering</span>, I've pivoted into IT, cloud infrastructure, and DevOps.</p>
-        
-        <p class="text-base lg:text-lg">
-            Currently, I’m part of the team at 
-            <strong class="text-orange-500 hover:underline decoration-gray-400 font-bold">
-            <a href="http://paloaltonetworks.com" target="_blank">Palo Alto Networks↗</a>
-            </strong>, where I work closely with customers, ensuring their cloud security! 😶‍🌫️
-        </p>
+    <section class="max-w-3xl py-12 text-left text-gray-800 tracking-tight transition duration-300 ease-in-out space-y-10">
 
-        <div class="grid grid-cols-1 gap-6 p-6 bg-gradient-to-br from-gray-200 via-gray-100 to-gray-50  rounded-lg shadow-md tracking-tight transition-all duration-300 ease-in-out">
-            <h3 class="text-2xl font-bold text-orange-500 mb-6 border-b-2 border-orange-500 pb-2">Skills & Technologies</h3>
-            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-disc list-inside">
-                <li><span class="font-semibold">Cloud Providers:</span> GCP, AWS, Azure</li>
-                <li><span class="font-semibold">Cloud-Native Security:</span> CNAPP</li>
-                <li><span class="font-semibold">Infrastructure as Code:</span> Terraform, CloudFormation</li>
-                <li><span class="font-semibold">Containers:</span> Docker, Podman</li>
-                <li><span class="font-semibold">Container Orchestration:</span> GKE, EKS, AKS, AWS ECS, Fargate</li>
-                <li><span class="font-semibold">Serverless:</span> AWS Lambda, Azure Functions, GCP Functions</li>
-                <li><span class="font-semibold">Provisioning:</span> CloudFormation, Terraform</li>
-                <li><span class="font-semibold">Scripting:</span> Bash</li>
-                <li><span class="font-semibold">CI/CD Tools:</span> Jenkins, GitHub Actions</li>
-                <li><span class="font-semibold">Version Control:</span> GitHub</li>
-                <li><span class="font-semibold">Logs Management:</span> Splunk</li>
+        <div class="space-y-5">
+            <h1 class="text-4xl font-bold">About Me</h1>
+            <p class="text-base lg:text-lg">I’m Elvis, a passionate IT professional originally from Maracaibo, Venezuela 🇻🇪, now based in Madrid, Spain.</p>
+            <p class="text-base lg:text-lg">With a background in <span class="text-orange-500 font-bold">Electronic Engineering</span>, I've pivoted into IT, cloud infrastructure, and DevOps.</p>
+            
+            <p class="text-base lg:text-lg">
+                Currently, I’m part of the team at 
+                <strong class="text-orange-500 font-bold hover:underline hover:decoration-dotted hover:decoration-orange-600">                <a href="http://paloaltonetworks.com" target="_blank">Palo Alto Networks</a>
+                </strong>, where I work closely with customers, ensuring their cloud security! 😶‍🌫️
+            </p>
+        </div>
+    
+        <div class="px-10 py-10 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-200 tracking-tight transition-all duration-300 ease-in-out">
+            <h3 class="text-2xl font-bold text-orange-500 mb-6 border-b-2 border-orange-500 pb-2 border-dotted">Skills & Technologies</h3>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+                <li><span class="font-semibold">Cloud Providers</span> GCP, AWS, Azure</li>
+                <li><span class="font-semibold">Cloud-Native Security</span> CNAPP</li>
+                <li><span class="font-semibold">Infrastructure as Code</span> Terraform, CloudFormation</li>
+                <li><span class="font-semibold">Containers</span> Docker, Podman</li>
+                <li><span class="font-semibold">Container Orchestration</span> GKE, EKS, AKS, AWS ECS, Fargate</li>
+                <li><span class="font-semibold">Serverless</span> AWS Lambda, Azure Functions, GCP Functions</li>
+                <li><span class="font-semibold">Provisioning</span> CloudFormation, Terraform</li>
+                <li><span class="font-semibold">Scripting</span> Bash</li>
+                <li><span class="font-semibold">CI/CD Tools</span> Jenkins, GitHub Actions</li>
+                <li><span class="font-semibold">Version Control</span> GitHub</li>
+                <li><span class="font-semibold">Logs Management</span> Splunk</li>
             </ul>
         </div>
 
-        <p class="text-base lg:text-lg">Whether it’s scaling your cloud, automating infrastructure, or securing your digital space—I’m here to help.
-        </p>
-    
-        <p class="text-base lg:text-lg text-orange-500 font-semibold">Feel free to reach out via  <a href="mailto:e.finol7@gmail.com" class="text-orange-500 underline">email</a>, and let’s build something great together! 📩</p>
+        <div class="space-y-5">
+            <p class="text-base lg:text-lg">Whether it’s scaling your cloud, automating infrastructure, or securing your digital space—I’m here to help.</p>
+            <p class="text-base lg:text-lg text-orange-500 font-semibold">Feel free to reach out via  
+                <a href="mailto:e.finol7@gmail.com" class="text-orange-500 underline">email</a>, and let’s build something great together! 📩
+            </p>
+        </div>
     </section>
 
 
