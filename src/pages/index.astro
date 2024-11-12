@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/main.astro";
-
-
-
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
 ---
 
 <Layout title="Elvis Finol - Website">
 
-    <section class="py-12 px-10 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-200 text-gray-800 text-left transition-all duration-300 ease-in-out space-y-5">
+    <section class="py-12 px-10 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-400 text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5">
         <div class="flex flex-row justify-between text-left tracking-tight">
             <h1 class="text-7xl font-bold transform duration-300 ">
                 <span>Hello, <span class="text-orange-500">I'm Elvis! 👋🏻</span> <span>
@@ -22,7 +22,7 @@ import Layout from "../layouts/main.astro";
         
         <div>
             <p class="text-sm sm:text-base font-semibold text-gray-600 dark:text-neutral-400">
-                📍 Based in Madrid, Spain.
+                Based in Madrid 🇪🇸 📍 
             </p>
         </div>
     
@@ -47,9 +47,10 @@ import Layout from "../layouts/main.astro";
         </div>
 
         <div class="space-y-5">
-            <h1 class="text-4xl font-bold">About Me</h1>
-            <p class="text-base lg:text-lg leading-relaxed tracking-tight">I’m Elvis, a passionate IT professional originally from Maracaibo, Venezuela 🇻🇪, now based in Madrid, Spain.</p>
-            <p class="text-base lg:text-lg leading-relaxed tracking-tight">With a background in <span class="text-orange-500 font-bold">Electronic Engineering</span>, I've pivoted into IT, cloud infrastructure, and DevOps.</p>
+            <h1 class="text-2xl font-bold">About Me</h1>
+            <p class="text-base lg:text-lg leading-relaxed tracking-tight">Hey there, it's Elvis a passionate IT professional originally from Maracaibo, Venezuela 🇻🇪, now based in Madrid, Spain.
+            </p>
+            <p class="text-base lg:text-lg leading-relaxed tracking-tight">With a background in <span class="text-orange-500 font-bold">Electronic Engineering</span>, I’ve pivoted into cloud security, DevOps, and system architecture.</p>
             
             <p class="text-base lg:text-lg leading-relaxed tracking-tight">
                 Currently, I’m part of the team at 
@@ -78,12 +79,14 @@ import Layout from "../layouts/main.astro";
 
         <div class="space-y-5">
             <p class="text-base lg:text-lg font-bold">🚀 Let’s Collaborate!</p>
-            <p class="text-base lg:text-lg">Whether it’s scaling your cloud, automating infrastructure, or securing your digital space—I’m here to help.</p>
+            <!-- <p class="text-base lg:text-lg">Whether it’s scaling your cloud, automating infrastructure, or securing your digital space—I’m here to help.</p> -->
             <p class="text-base lg:text-lg text-orange-500 font-semibold">Feel free to reach out via  
                 <a href="mailto:e.finol7@gmail.com" class="text-black hover:underline">email</a>, and let’s build something great together! 📩
             </p>
         </div>
     </section>
+
+
 
     
 </Layout>
