@@ -35,7 +35,9 @@
   </head>
 
   <body class="antialiased bg-gradient-to-tr from-slate-100 to-gray-200 flex items-center justify-center min-h-screen py-20 px-5">
-    <slot />
+    <div class="max-w-5xl w-full mx-auto text-base leading-relaxed tracking-tighter">
+      <slot />
+    </div>
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
   </body>

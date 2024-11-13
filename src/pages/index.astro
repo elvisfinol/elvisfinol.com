@@ -9,19 +9,19 @@ import PageHeading from "../components/page-heading.astro";
 
     <section class="py-12 px-10 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-400 text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5">
         <div class="flex flex-row justify-between text-left tracking-tight">
-            <h1 class="text-7xl font-bold transform duration-300 ">
+            <h1 class="text-7xl font-serif transform duration-300 ">
                 <span>Hello, <span class="text-orange-500">I'm Elvis! 👋🏻</span> <span>
             </h1>
         </div>
 
-        <div class="max-w-3xl">
-            <h3 class="text-base lg:text-lg leading-relaxed tracking-tight text-gray-700">
+        <div class="max-w-auto">
+            <h3 class="leading-relaxed tracking-tight text-gray-700">
                 Senior System Engineer with diverse experience in problem-solving. Skilled in independent and team-based work across project lifecycles.
             </h3>
         </div>
         
         <div>
-            <p class="text-sm sm:text-base font-semibold text-gray-600 dark:text-neutral-400">
+            <p class="font-semibold text-gray-600 dark:text-neutral-400">
                 Based in Madrid 🇪🇸 📍 
             </p>
         </div>
@@ -48,23 +48,58 @@ import PageHeading from "../components/page-heading.astro";
 
         <div class="space-y-5">
             <h1 class="text-2xl font-bold">About Me</h1>
-            <p class="text-base lg:text-lg leading-relaxed tracking-tight">Hey there, it's Elvis a passionate IT professional originally from Maracaibo, Venezuela 🇻🇪, now based in Madrid, Spain.
+            <p>
+                I'm Elvis, born and raised in Maracaibo, Venezuela. While I've always had a knack for computers, I pursued a degree in Electronic 
+                Engineering with a focus on Automation and Processes at 
+                <a 
+                    href="https://www.urbe.edu/" 
+                    target="_blank" 
+                    class="text-black font-bold"
+                >
+                Rafael Belloso Chacín University.
+                </a>From a young age, I aspired to live in different countries and experience diverse cultures. At 24, I made the life-changing 
+                decision to move to Buenos Aires, Argentina.
             </p>
-            <p class="text-base lg:text-lg leading-relaxed tracking-tight">With a background in <span class="text-orange-500 font-bold">Electronic Engineering</span>, I’ve pivoted into cloud security, DevOps, and system architecture.</p>
-            
-            <p class="text-base lg:text-lg leading-relaxed tracking-tight">
-                Currently, I’m part of the team at 
-                <strong class="text-orange-500 font-bold hover:underline hover:decoration-orange-600">
-                    <a href="http://paloaltonetworks.com" target="_blank">Palo Alto Networks</a>
-                </strong>, where I work closely with customers, ensuring their cloud security! 😶‍🌫️
+            <p>
+                In Buenos Aires, I began my career at 
+                <a 
+                href="https://www.urbe.edu/" 
+                    target="_blank" 
+                    class="bg-[#06b6d4]/20 text-black font-bold px-1 rounded hover:bg-[#06b6d4]/50 transition duration-200"
+                >
+                Thomson Reuters Corporation,
+                </a>
+                providing technical support for their fintech products in the 
+                finance sector. This role introduced me to the fascinating world of fintech. After two years, I transitioned to 
+                <a 
+                    href="https://www.teradata.com/"
+                    target="_blank"
+                    class="bg-[#06b6d4]/20 text-black font-bold px-1 rounded hover:bg-[#06b6d4]/50 transition duration-200"
+                >
+                    Teradata
+                </a>, a company specializing in database analytics software and big data. For the next four years, I was the sole point of contact for 
+                several clients in Argentina regarding their Teradata systems. On 24/7 call duty, I managed project implementations, incident handling, 
+                hardware maintenance, and supported my local team in assisting other clients. Despite the challenges, working in data centers was both 
+                demanding and rewarding.
+            </p>
+            <p>
+                Always seeking new horizons, I relocated to Madrid, Spain, where I currently reside. Today, I work at 
+                <a 
+                    href="http://paloaltonetworks.com" 
+                    target="_blank" 
+                    class="bg-[#06b6d4]/20 text-black font-bold px-1 rounded hover:bg-[#06b6d4]/50 transition duration-200"
+                >
+                    Palo Alto Networks
+                </a> as a Designated Support Engineer for EMEA accounts. In this role, I collaborate closely with clients to secure their public cloud environments using the CNAPP (Prisma Cloud) product! 😶‍🌫️
             </p>
         </div>
+        
 
         <div class="px-10 py-10 bg-gradient-to-bl from-orange-50 via-orange-50 to-orange-50 shadow-md rounded-3xl border border-gray-200 tracking-tight transition-all duration-300 ease-in-out">
-            <h3 class="text-2xl font-bold text-orange-500 mb-6 border-b-2 border-orange-500 pb-2 border-dotted">Skills & Technologies</h3>
-            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1">
+            <h3 class="text-lg font-bold text-orange-500 mb-6 border-b-2 border-orange-500 pb-2 border-dotted">Skill Set & Technologies</h3>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                 <li><span class="font-semibold">Cloud Providers</span> GCP, AWS, Azure</li>
-                <li><span class="font-semibold">Cloud-Native Security</span> CNAPP</li>
+                <li><span class="font-semibold">Cloud-Native Security</span> CNAPP (Prisma Cloud)</li>
                 <li><span class="font-semibold">Infrastructure as Code</span> Terraform, CloudFormation</li>
                 <li><span class="font-semibold">Containers</span> Docker, Podman</li>
                 <li><span class="font-semibold">Container Orchestration</span> GKE, EKS, AKS, AWS ECS, Fargate</li>
@@ -78,9 +113,9 @@ import PageHeading from "../components/page-heading.astro";
         </div>
 
         <div class="space-y-5">
-            <p class="text-base lg:text-lg font-bold">🚀 Let’s Collaborate!</p>
+            <p class="font-bold">🚀 Let’s Collaborate!</p>
             <!-- <p class="text-base lg:text-lg">Whether it’s scaling your cloud, automating infrastructure, or securing your digital space—I’m here to help.</p> -->
-            <p class="text-base lg:text-lg text-orange-500 font-semibold">Feel free to reach out via  
+            <p class="text-orange-500 font-semibold">Feel free to reach out via  
                 <a href="mailto:e.finol7@gmail.com" class="text-black hover:underline">email</a>, and let’s build something great together! 📩
             </p>
         </div>
