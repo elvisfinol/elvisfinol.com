@@ -1,21 +1,27 @@
 ---
 import Layout from "../layouts/main.astro";
-import experiences from "../collections/experiences.json";
-import AboutExperience from "../components/about-experience.astro";
-import PageHeading from "../components/page-heading.astro";
+import Separator from "../components/home/separator.astro";
 ---
 
 <Layout title="Elvis Finol - Website">
 
     <section class="py-12 px-10 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-3xl border border-gray-400 text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5">
-        <div class="flex flex-row justify-between text-left tracking-tight">
-            <h1 class="text-7xl font-serif transform duration-300 ">
-                <span>Hello, <span class="text-orange-500">I'm Elvis! 👋🏻</span> <span>
+        <div class="flex flex-wrap items-center gap-4">
+            <!-- Heading -->
+            <h1 class="text-5xl md:text-7xl font-bold transform duration-300">
+                <span>Hey there, <span class="text-orange-500">I'm Elvis! 👋🏻</span></span>
             </h1>
+            
+            <!-- Image -->
+            <img 
+                src="/assets/images/photo.png" 
+                class="hidden sm:block rounded-full w-24 h-24 md:w-32 md:h-32 shadow-lg border-4 border-orange-400 hover:shadow-xl transition-transform duration-300 hover:scale-105 object-cover bg-gradient-to-br from-blue-200 via-purple-300 to-pink-200" 
+                alt="Elvis"
+            />
         </div>
 
         <div class="max-w-auto">
-            <h3 class="leading-relaxed tracking-tight text-gray-700">
+            <h3 class="text-gray-700 text-lg">
                 Senior System Engineer with diverse experience in problem-solving. Skilled in independent and team-based work across project lifecycles.
             </h3>
         </div>
@@ -25,7 +31,7 @@ import PageHeading from "../components/page-heading.astro";
                 Based in Madrid 🇪🇸 📍 
             </p>
         </div>
-    
+
         <div class="flex flex-row justify-start gap-4">
             <a href="https://twitter.com/elvisfinol" target="_blank" class="flex items-center justify-center w-full sm:w-auto px-6 py-3 bg-gray-200 text-black font-semibold rounded-lg shadow hover:bg-orange-400 transition duration-300">
                 <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -47,9 +53,9 @@ import PageHeading from "../components/page-heading.astro";
         </div>
 
         <div class="space-y-5">
-            <h1 class="text-2xl font-bold">About Me</h1>
+            <h1 class="text-2xl font-bold">Get to know me!</h1>
             <p>
-                I'm Elvis, born and raised in Maracaibo, Venezuela. While I've always had a knack for computers, I pursued a degree in Electronic 
+                I'm Elvis, born and raised in Maracaibo, <span class="bg-gradient-to-r from-yellow-500 via-blue-500 to-red-500 bg-clip-text text-transparent">Venezuela.</span> While I've always had a knack for computers, I pursued a degree in Electronic 
                 Engineering with a focus on Automation and Processes at 
                 <a 
                     href="https://www.urbe.edu/" 
@@ -90,13 +96,14 @@ import PageHeading from "../components/page-heading.astro";
                     class="bg-[#06b6d4]/20 text-black font-bold px-1 rounded hover:bg-[#06b6d4]/50 transition duration-200"
                 >
                     Palo Alto Networks
-                </a> as a Designated Support Engineer for EMEA accounts. In this role, I collaborate closely with clients to secure their public cloud environments using the CNAPP (Prisma Cloud) product! 😶‍🌫️
+                </a> as a Designated Support Engineer for EMEA region. In this role, I collaborate closely with clients to secure their public cloud environments using the CNAPP (Prisma Cloud) product! 😶‍🌫️
             </p>
         </div>
-        
 
-        <div class="px-10 py-10 bg-gradient-to-bl from-orange-50 via-orange-50 to-orange-50 shadow-md rounded-3xl border border-gray-200 tracking-tight transition-all duration-300 ease-in-out">
-            <h3 class="text-lg font-bold text-orange-500 mb-6 border-b-2 border-orange-500 pb-2 border-dotted">Skill Set & Technologies</h3>
+        <Separator />        
+
+        <div class="">
+            <h3 class="text-lg font-bold text-orange-500 mb-6">Skill Set & Technologies</h3>
             <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                 <li><span class="font-semibold">Cloud Providers</span> GCP, AWS, Azure</li>
                 <li><span class="font-semibold">Cloud-Native Security</span> CNAPP (Prisma Cloud)</li>
@@ -111,6 +118,8 @@ import PageHeading from "../components/page-heading.astro";
                 <li><span class="font-semibold">Logs Management</span> Splunk</li>
             </ul>
         </div>
+
+        <Separator />
 
         <div class="space-y-5">
             <p class="font-bold">🚀 Let’s Collaborate!</p>
