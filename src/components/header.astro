@@ -1,108 +1,64 @@
 ---
-import menus from "../collections/menu.json";
-import Logo from "../components/logo.astro";
 ---
+<header class="mb-6 bg-white shadow-lg rounded-3xl text-gray-700 transition-all duration-300 ease-in-out">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4">
+    <!-- Logo -->
+    <a href="/" class="text-3xl font-bold text-orange-500">🧑‍💻</a>
 
-<!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
-<div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
-<header id="header" class="absolute top-0 z-50 w-full h-20">
-  <div
-    class="flex items-center justify-between h-full max-w-5xl pl-6 pr-4 mx-auto border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l lg:rounded-b-xl"
-  >
-    <Logo />
-    <div
-      id="mobileMenuBackground"
-      onclick="closeMobileMenu()"
-      class="fixed inset-0 z-20 hidden w-screen h-screen duration-300 ease-out"
+    <!-- Hamburger Button (Mobile Only) -->
+    <button 
+      id="menu-button"
+      class="block lg:hidden text-gray-700 focus:outline-none focus:ring-3 focus:ring-orange-400 hover:text-orange-500 transition-transform duration-300 transform hover:scale-105"
+      aria-label="Toggle Navigation"
+      aria-expanded="false"
     >
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        class="h-8 w-8" 
+        fill="none" 
+        viewBox="0 0 24 24" 
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- Navigation Links (Desktop) -->
+    <div class="hidden lg:flex space-x-8">
+      <a href="/" class="text-gray-700 hover:text-orange-500 transition-colors duration-200">Home</a>
     </div>
-    
-    <nav
-      class="relative z-30 flex flex-row-reverse justify-start w-full text-sm sm:justify-end text-neutral-900 dark:text-neutral-400 sm:flex-row"
-    >
-      <div
-        id="openMenu"
-        class="flex flex-col items-end justify-center w-6 h-6 ml-4 cursor-pointer sm:hidden"
-      >
-        <svg
-          class="w-8 h-8 dark:text-neutral-200"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"><path d="M4 8h16M4 16h16"></path></svg>
-      </div>
-      <div
-        id="closeMenu"
-        class="flex flex-col items-end justify-center w-6 h-6 ml-4 -translate-x-1 cursor-pointer sm:hidden"
-      >
-        <svg
-          class="w-6 h-6 text-neutral-600 dark:text-neutral-200"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          stroke="currentColor"><path d="M6 18L18 6M6 6l12 12"></path></svg
-        >
-      </div>
-      <div
-        id="menu"
-        class="fixed top-[75px] ease-out duration-300 sm:top-0 w-full left-0 sm:py-0 pt-7 pb-4 dm:mx-0 z-40 flex-col items-end justify-start hidden h-auto text-sm sm:text-base sm:h-auto sm:relative sm:flex-row sm:flex sm:w-auto sm:pr-0 sm:pt-0"
-      >
-        <div
-          class="absolute inset-0 top-0 right-0 block w-full h-full px-3 sm:hidden"
-        >
-          <div
-            class="relative w-full h-full border border-neutral-300 dark:border-neutral-700 backdrop-blur-sm rounded-xl dark:bg-neutral-950"
-          >
-          </div>
-        </div>
-        {
-          menus.map((menu) => {
-            return (
-              <a
-                href={menu.url}
-                class="relative flex items-center justify-center w-full px-3 py-2 font-extralight tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 text-sm hover:scale-125"
-              >
-                {menu.name}
-              </a>
-            )
-          })
-        }
-      </div>
+  </nav>
 
-      <div id="darkToggle" class="relative flex items-center pl-6 ml-4 font-medium tracking-wide cursor-pointer text-neutral-800 group dark:text-white">
-
-        <div class="absolute left-0 flex items-center justify-center w-6 h-6 overflow-hidden border-b border-transparent horizon group-hover:border-neutral-600">
-          <svg 
-            class="absolute w-6 h-6 transition duration-700 transform ease"
-            id="sun"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <!-- <path
-              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path> -->
-          </svg>
-
-          <svg
-            class="absolute hidden w-6 h-6 transition duration-700 transform ease"
-            id="moon"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            ><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </nav>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-lg rounded-b-3xl transition-transform transform duration-300 ease-in-out">
+    <ul class="flex flex-col items-center space-y-4 py-6">
+      <li><a href="/" class="text-gray-700 hover:text-orange-800 transition-colors duration-200">Home</a></li>
+    </ul>
   </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+          const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+          menuButton.setAttribute('aria-expanded', !isExpanded);
+          menuButton.classList.toggle('rotate-90');
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu if clicking outside
+        document.addEventListener('click', (e) => {
+          if (!menuButton.contains(e.target) && !mobileMenu.contains(e.target) && !mobileMenu.classList.contains('hidden')) {
+            menuButton.setAttribute('aria-expanded', 'false');
+            menuButton.classList.remove('rotate-90');
+            mobileMenu.classList.add('hidden');
+          }
+        });
+      }
+    });
+  </script>
 </header>
