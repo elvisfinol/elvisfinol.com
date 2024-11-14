@@ -25,9 +25,9 @@
   window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
     if (window.scrollY > 10) {
-      navbar.classList.add('bg-white/20', 'backdrop-blur-lg', 'shadow-xl', 'rounded-xl');
+      navbar?.classList.add('bg-white/20', 'backdrop-blur-lg', 'shadow-xl', 'rounded-xl');
     } else {
-      navbar.classList.remove('bg-white/20', 'backdrop-blur-lg', 'shadow-xl');
+      navbar?.classList.remove('bg-white/20', 'backdrop-blur-lg', 'shadow-xl');
     }
   });
 </script>
