@@ -2,25 +2,32 @@
 ---
 
 
-<header>
-    <nav aria-label="Main Navigation" class="mb-5">
-      <div class="flex w-fit gap-2 font-bold text-gray-800">
-        <a 
-          href="/" 
-          class="px-3 py-1 flex items-center justify-center bg-gray-100 rounded-lg shadow hover:bg-orange-400 
-          focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 
-          transition duration-300"
-        >
-          Home
-        </a>
-        <a 
-          href="/side-hustle" 
-          class="px-3 py-1 flex items-center justify-center w-full bg-gray-100 rounded-lg shadow hover:bg-orange-400 
-          focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 
-          transition duration-300"
-        >
-          Side Hustle Project
-        </a>
+<header id="navbar" class="sticky top-0 z-50 mb-5 transition duration-300">
+  <nav aria-label="Main Navigation" class="bg-white/80 rounded-xl shadow-md">
+    <div class="container mx-auto flex flex-row justify-evenly items-center gap-4 font-semibold text-gray-600 p-2 text-lg">
+      <a 
+        href="/" 
+        class="px-4 py-2 flex items-center justify-center hover:text-orange-500 transition duration-300 hover:scale-105"
+      >
+        Home
+      </a>
+      <a 
+        href="/side-hustle" 
+        class="px-4 py-2 flex items-center justify-center hover:text-orange-500 transition duration-300 hover:scale-105"
+      >
+        Side Hustle Project
+      </a>
     </div>
-    </nav>
-  </header>
+  </nav>
+</header>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    if (window.scrollY > 10) {
+      navbar.classList.add('bg-white/20', 'backdrop-blur-lg', 'shadow-xl', 'rounded-xl');
+    } else {
+      navbar.classList.remove('bg-white/20', 'backdrop-blur-lg', 'shadow-xl');
+    }
+  });
+</script>
