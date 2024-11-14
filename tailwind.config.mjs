@@ -4,10 +4,6 @@ export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
 	theme: {
 	  extend: {
-		fontFamily: {
-		  roboto: ['Roboto', 'sans-serif'],
-		  indie: ['Indie Flower', 'cursive'],
-		},
 		animation: {
 		  border: 'border 6s ease infinite',
 		},
