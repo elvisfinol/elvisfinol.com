@@ -25,14 +25,16 @@ import Header from "../components/header.astro"
   </head>
 
 
-  <body class="antialiased bg-gradient-to-tr from-slate-100 to-gray-200 min-h-screen py-10 px-3 max-w-3xl w-full mx-auto text-base leading-normal tracking-tighter">
-    <Header />
+  <body class="antialiased bg-gradient-to-tr from-slate-100 to-gray-200 min-h-screen py-4 px-3 max-w-3xl w-full mx-auto text-base leading-normal tracking-tighter">
 
+    <Header />
     <slot />
     <script src="../assets/js/main.js"></script>
     <Fragment set:html={import.meta.env.FOOTER_INJECT} />
-    
+
+    <!-- <Footer /> -->
   </body>
+
 
 
 </html>
