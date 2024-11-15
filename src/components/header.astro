@@ -13,16 +13,16 @@
 </button>
  
     <!-- Navigation Links -->
-    <div id="nav-links" class="hidden md:flex md:w-fit flex-col md:flex-row justify-evenly items-center gap-4 font-semibold text-white/80 p-4 md:p-0 transition duration-300">
+    <div id="nav-links" class="hidden md:flex md:w-fit flex-col md:flex-row justify-evenly items-center gap-4 font-extrabold text-white/80 p-4 md:p-0 transition duration-300">
       <a 
         href="/" 
-        class="px-4 py-2 flex items-center justify-center hover:text-white transition duration-300"
+        class="px-4 py-2 flex items-center justify-center hover:text-white transition duration-300 scale-105"
       >
         Home
       </a>
       <a 
-        href="/side-hustle" 
-        class="px-4 py-2 flex items-center justify-center hover:text-white transition duration-300"
+        href="/side-hustle"
+        class="px-4 py-2 flex items-center justify-center hover:text-white transition duration-300 scale-105"
       >
         Side Hustle Project
       </a>
@@ -46,9 +46,9 @@
     if (!navbar) return;
     
     if (window.scrollY > 10) {
-      navbar.classList.add('backdrop-blur-sm', 'shadow-xl', 'rounded-xl');
+      navbar.classList.add('bg-transparent', 'shadow-xl', 'rounded-xl');
     } else {
-      navbar.classList.remove('backdrop-blur-sm', 'shadow-xl', 'rounded-xl');
+      navbar.classList.remove('bg-transparent', 'shadow-xl', 'rounded-xl');
     }
   };
 
