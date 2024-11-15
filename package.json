@@ -21,6 +21,7 @@
 		"prettier": "^3.2.5",
 		"prettier-plugin-tailwindcss": "^0.5.14",
 		"tailwindcss": "^3.4.14",
+		"tailwindcss-highlights": "^1.0.0",
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
