@@ -31,31 +31,54 @@
 </header>
 
 <script>
-  // Handle Navbar Scroll Effect
-  window.addEventListener('scroll', () => {
-    const navbar = document.getElementById('navbar');
-    if (window.scrollY > 10) {
-      navbar?.classList.add('backdrop-blur-sm', 'shadow-xl', 'rounded-xl', 'top-2');
-    } else {
-      navbar?.classList.remove('backdrop-blur-sm', 'shadow-xl', 'rounded-xl');
-    }
-  });
+  // Utility function to debounce events
+  const debounce = (func: Function, wait: number) => {
+    let timeout: number; // Use number type for browser compatibility
+    return (...args: unknown[]) => {
+      clearTimeout(timeout);
+      timeout = window.setTimeout(() => func(...args), wait);
+    };
+  };
 
-  // Handle Burger Menu Toggle
+  // Navbar scroll effect
+  const handleNavbarScroll = () => {
+    const navbar = document.getElementById('navbar');
+    if (!navbar) return;
+    
+    if (window.scrollY > 10) {
+      navbar.classList.add('backdrop-blur-sm', 'shadow-xl', 'rounded-xl', 'top-2');
+    } else {
+      navbar.classList.remove('backdrop-blur-sm', 'shadow-xl', 'rounded-xl', 'top-2');
+    }
+  };
+
+  // Debounced scroll event listener for better performance
+  window.addEventListener('scroll', debounce(handleNavbarScroll, 50));
+
+  // Burger menu toggle functionality
   const burgerMenu = document.getElementById('burger-menu');
   const navLinks = document.getElementById('nav-links');
 
-  burgerMenu?.addEventListener('click', () => {
-    navLinks?.classList.toggle('hidden');
-    navLinks?.classList.toggle('flex');
-    
-    // Animate burger icon
-    burgerMenu.querySelector('.line1').classList.toggle('rotate-45', !navLinks.classList.contains('hidden'));
-    burgerMenu.querySelector('.line1').classList.toggle('translate-y-2', !navLinks.classList.contains('hidden'));
-    
-    burgerMenu.querySelector('.line2').classList.toggle('opacity-0', !navLinks.classList.contains('hidden'));
+  if (burgerMenu && navLinks) {
+    burgerMenu.addEventListener('click', () => {
+      const isOpen = !navLinks.classList.contains('hidden');
+      
+      // Toggle visibility of navigation links
+      navLinks.classList.toggle('hidden', isOpen);
+      navLinks.classList.toggle('flex', !isOpen);
 
-    burgerMenu.querySelector('.line3').classList.toggle('-rotate-45', !navLinks.classList.contains('hidden'));
-    burgerMenu.querySelector('.line3').classList.toggle('-translate-y-1', !navLinks.classList.contains('hidden'));
-  });
+      // Toggle burger menu icon animation
+      const line1 = burgerMenu.querySelector<HTMLElement>('.line1');
+      const line2 = burgerMenu.querySelector<HTMLElement>('.line2');
+      const line3 = burgerMenu.querySelector<HTMLElement>('.line3');
+
+      line1?.classList.toggle('rotate-45', !isOpen);
+      line1?.classList.toggle('translate-y-2', !isOpen);
+      
+      line2?.classList.toggle('opacity-0', !isOpen);
+      
+      line3?.classList.toggle('-rotate-45', !isOpen);
+      line3?.classList.toggle('-translate-y-1', !isOpen);
+    });
+  }
 </script>
