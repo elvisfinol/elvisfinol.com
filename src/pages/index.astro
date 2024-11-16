@@ -1,13 +1,14 @@
 ---
-import Layout from "../layouts/main.astro";
+// component import 
+import MainLayout from "../layouts/MainLayout.astro";
 import Separator from "../components/separator.astro";
 
 ---
 
-<Layout title="Elvis Finol - Home">
+<MainLayout title="Elvis Finol" description="Home Page">
 
-    <section class="py-6 px-4 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-xl text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5">
-        <div class="flex flex-wrap justify-around items-center mx-1">
+    <section class="py-6 px-4 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-xl text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5 max-w-4xl mx-auto">
+        <div class="flex flex-wrap justify-between items-center mx-1">
             <!-- Heading -->
             <h1 class="lg:text-7xl md:text-7xl text-6xl font-font transform duration-300 tracking-tighter">
                 <span>Hello,</span>
@@ -163,5 +164,5 @@ import Separator from "../components/separator.astro";
 
 
     
-</Layout>
+</MainLayout>
 

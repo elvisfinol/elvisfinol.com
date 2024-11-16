@@ -1,9 +1,9 @@
 ---
-import Layout from "../layouts/main.astro";
+import MainLayout from "@/layouts/MainLayout.astro";
 ---
 
-<Layout title="Side Hustle">
-  <section class="py-6 px-4 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-xl text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5">
+<MainLayout title="Side Hustle", description="Side Hustle Page">
+  <section class="py-6 px-4 bg-gradient-to-tr from-gray-200 via-gray-100 to-gray-50 shadow-md rounded-xl text-gray-700 text-left transition-all duration-300 ease-in-out space-y-5 max-w-4xl mx-auto">
 
 
       <h1 class="text-4xl font-bold text-orange-600 mb-6">What Is a Side Hustle and Why Should You Consider Having One?</h1>
@@ -78,10 +78,10 @@ import Layout from "../layouts/main.astro";
         Ready to start your side hustle? Check out our complete guide for more tips and resources.
       </p>
       <a 
-        href="/side-hustle-guide" 
+        href="/" 
         class="block w-full text-center bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 rounded-xl mt-4 transition duration-300"
       >
-        Discover the Complete Guide
+        Go back to Home!
       </a>
 
   </section>
@@ -89,4 +89,4 @@ import Layout from "../layouts/main.astro";
 
 
   
-</Layout>
+</MainLayout>

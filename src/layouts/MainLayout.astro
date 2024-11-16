@@ -1,0 +1,19 @@
+--- 
+// component import 
+import Header from "../components/header.astro";
+import Head from "../layouts/MainHead.astro"
+
+const { title = "Elvis Finol Website", description = "Personal Website" } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+  <Head {title} {description} />
+
+<body class="antialiased bg-gradient-to-tr from-slate-100 to-gray-200 min-h-screen py-4 px-3 max-w-4xl w-full mx-auto text-base leading-normal tracking-tighter">
+  <Header />
+  <slot />
+</body>
+
+</html>
